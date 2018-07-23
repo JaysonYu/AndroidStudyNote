@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+
+    defaultConfig {
+        applicationId "com.example.mvpretrofitrxjava"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.1.2'
+    testCompile 'junit:junit:4.12'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    compile 'com.squareup.retrofit2:retrofit:2.4.0'
+    //支持Retrofit和RxJava结合使用
+    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    //支持Retrofit请求回来的json直接转换为bean
+    compile 'com.squareup.retrofit2:converter-gson:2.4.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.15'
+    //RxAndroid其实就是对RxJava的扩展，比如Android主线程在RxJava中就没有，因此要使用的话就必须得引用RxAndroid
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    compile 'com.google.code.gson:gson:2.8.5'
+}

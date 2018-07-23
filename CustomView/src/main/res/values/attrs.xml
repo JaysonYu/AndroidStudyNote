@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ToggleButton">
+        <attr name="isOpen" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RecView" >
+        <attr name="defultSize" format="dimension" />
+    </declare-styleable>
+</resources>
