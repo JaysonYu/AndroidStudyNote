@@ -4,9 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CustomView/CustomView.iml" filepath="$PROJECT_DIR$/CustomView/CustomView.iml" />
       <module fileurl="file://$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" filepath="$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvpretrofitrxjava/MvpRetrofitRxjava.iml" filepath="$PROJECT_DIR$/mvpretrofitrxjava/MvpRetrofitRxjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyStudyNote.iml" filepath="$PROJECT_DIR$/MyStudyNote.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mvpretrofitrxjava/mvpretrofitrxjava.iml" filepath="$PROJECT_DIR$/mvpretrofitrxjava/mvpretrofitrxjava.iml" />
     </modules>
   </component>
 </project>

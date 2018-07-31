@@ -7,6 +7,6 @@
     <com.example.togglebutton.RecView
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        r/>
+        app:defultSize="100dp"/>
 
 </android.support.constraint.ConstraintLayout>
